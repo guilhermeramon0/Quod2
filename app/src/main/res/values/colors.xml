@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="preto_transparente">#80000000</color>
+    <color name="cor_primaria">#005B67</color>
+    <color name="cor_secundaria">#0B4D23</color>
+    <color name="cor_terciaria">#391F7E</color>
+    <color name="cor_de_fundo">#ECEDED</color>
+</resources>
