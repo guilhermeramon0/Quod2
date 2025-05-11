@@ -7,17 +7,19 @@ pluginManagement {
                 includeGroupByRegex("androidx.*")
             }
         }
-        mavenCentral()
-        gradlePluginPortal()
+        mavenCentral()           // Necessário para o Spring
+        gradlePluginPortal()     // Plugins do Kotlin e Spring
     }
 }
+
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT) // ✅ Altere aqui
     repositories {
         google()
-        mavenCentral()
+        mavenCentral()          // ✅ Necessário para Spring
     }
 }
 
 rootProject.name = "Quodson"
-include ':app'
+
+include(":app", ":backend")     // ✅ Certo
