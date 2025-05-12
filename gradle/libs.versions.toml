@@ -1,7 +1,7 @@
 [versions]
 accompanistNavigationAnimation = "0.30.1"
 activityComposeVersion = "1.5.1"
-agp = "8.5.1"
+agp = "8.10.0"
 androidxComposeBom = "2024.11.00"
 androidxJunit = "1.1.5"
 cameraCamera2 = "1.4.0"

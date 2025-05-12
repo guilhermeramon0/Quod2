@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: quodson-api
+
+  # Configuração para upload de arquivos
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  # Configuração do MongoDB para persistência
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/quodson
+      auto-index-creation: true
+
+# Configurações da API
+quodson:
+  notification:
+    url: http://sistema-interno.quod.com/api/notificacoes
+    enabled: true
+  validation:
+    # Níveis de confiança para validações
+    min-face-confidence: 0.75
+    min-fingerprint-confidence: 0.80
+    min-document-confidence: 0.85
